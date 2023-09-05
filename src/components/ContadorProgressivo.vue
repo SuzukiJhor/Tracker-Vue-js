@@ -23,6 +23,7 @@ import TemporizadorProgressivo from './TemporizadorProgressivo.vue'
 
 export default defineComponent({
     name: 'ContadorProgressivo ',
+    emits: ['aoContadorFinalizado'],
     data() {
         return {
             tempoEmSegundos: 0,
@@ -41,7 +42,10 @@ export default defineComponent({
             }, 1000)
         },
         finalizar() {
+            this.cronometroRodando = false
             clearInterval(this.cronometro)
+            this.$emit('aoContadorFinalizado', this.tempoEmSegundos)
+            this.tempoEmSegundos = 0
         }
     }
 });

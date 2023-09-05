@@ -13,11 +13,13 @@ export default defineComponent({
 </script>
 
 <style scoped>
+
 header {
     padding: 15px;
     background: #0d3b66;
-    width: 50%;
+    width: 60%;
     height: 100vh;
+    margin-right: -25px;
 }
 
 @media only screen and (max-width: 768px) {
