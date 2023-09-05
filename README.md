@@ -19,7 +19,7 @@ npm run build
 ```
 npm run lint
 ```
-# Apresentation:
+### Apresentation:
 
 <img width="774" alt="image" src="https://github.com/SuzukiJhor/Tracker-Vue.js/assets/95131108/d1a19d28-ea47-43d8-b35a-945b755db117">
 
