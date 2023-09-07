@@ -1,5 +1,5 @@
 <template>
-    <div class="box">
+    <div class="box formulario">
         <div class="columns">
             <div class="column is-8" role="form" arial-label="Formulário para criação de uma nova tarefa">
                 <input type="text" class="input" placeholder="Qual tarefa voce deseja iniciar?" v-model="descricao">
@@ -47,4 +47,9 @@ export default defineComponent({
     width:90%;
     margin-top:20px;
 }
-</style>
+
+.formulario {
+    color: var(--texto-primario) !important;
+    background-color: var(--bg-primario) !important;
+}
+</style> 
